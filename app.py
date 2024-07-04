@@ -93,7 +93,7 @@ def main():
 
     # Sidebar for uploading PDF files
     with st.sidebar:
-        st.title("Menu:")
+        st.title(Smart Chat with Your PDF Files")
         pdf_docs = st.file_uploader(
             "Upload Your PDF Files and Click the Send & Process Button", accept_multiple_files=True)
         if st.button("Submit & Process"):
@@ -104,7 +104,6 @@ def main():
                 st.success("Process completed")
 
     # Main content area for displaying chat messages
-    st.title("Smart Chat with Your PDF Files")
     st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
     # Chat input
@@ -126,7 +125,7 @@ def main():
     # Display chat messages and bot response
     if st.session_state.messages[-1]["role"] != "assistant":
         with st.chat_message("assistant"):
-            with st.spinner("Thinking..."):
+            with st.spinner(""):
                 response = user_input(prompt)
                 placeholder = st.empty()
                 full_response = ''
