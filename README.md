@@ -20,35 +20,37 @@ This Streamlit-based chatbot application allows users to upload PDF files, extra
    cd pdf-chatbot
 Install the required packages:
 
-bash
-Kodu kopyala
+   ```bash
 pip install -r requirements.txt
-Set up environment variables:
+
+# Set up environment variables:
 Create a .env file in the project root directory and add your Google API key:
 
-env
-Kodu kopyala
+   ```bash
 GOOGLE_API_KEY=your-google-api-key
-📚 Usage
+
+# 📚 Usage
 Run the Streamlit application:
 
-bash
-Kodu kopyala
+
+   ```bash
 streamlit run main.py
+
 In the Streamlit interface:
 
 Upload your PDF files using the sidebar uploader.
 Click "Submit & Process" to extract and process the text.
 Ask questions based on the content of the uploaded PDFs.
 Clear chat history using the "Clear Chat History" button.
-📂 Code Overview
-Functions
+# 📂 Code Overview
+# Functions
 get_pdf_text(pdf_docs): Reads all PDF files and returns the extracted text.
 get_text_chunks(text): Splits the extracted text into chunks.
 get_vector_store(chunks): Creates and saves a FAISS vector store from text chunks.
 get_conversational_chain(): Sets up a conversational chain using Google Generative AI.
 clear_chat_history(): Clears the chat history in the Streamlit session state.
 user_input(user_question): Processes the user question, searches for similar documents, and returns the response from the conversational chain.
-Streamlit Interface
+
+# Streamlit Interface
 Sidebar: For uploading PDF files and processing them.
 Main Area: For displaying chat messages and interacting with the chatbot.
