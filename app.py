@@ -93,7 +93,7 @@ def main():
 
     # Sidebar for uploading PDF files
     with st.sidebar:
-        st.title(Smart Chat with Your PDF Files")
+        st.title("Smart Chat with Your PDF Files")
         pdf_docs = st.file_uploader(
             "Upload Your PDF Files and Click the Send & Process Button", accept_multiple_files=True)
         if st.button("Submit & Process"):
