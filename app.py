@@ -16,6 +16,17 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # read all pdf files and return text
 
+import streamlit as st
+
+# Add custom CSS to hide the GitHub icon
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
+# Your app code goes here
 
 def get_pdf_text(pdf_docs):
     text = ""
