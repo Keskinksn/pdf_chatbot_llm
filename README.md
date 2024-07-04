@@ -14,8 +14,8 @@ This Streamlit-based chatbot application allows users to upload PDF files, extra
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/pdf-chatbot.git
-   cd pdf-chatbot
+   git clone https://github.com/yourusername/pdf_chatbot_llm.git
+   cd pdf_chatbot_llm
    
 2. Install the required packages:
 
