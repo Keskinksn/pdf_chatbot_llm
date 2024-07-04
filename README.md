@@ -1,7 +1,7 @@
 # 🤖 PDF Chatbot
 
 This Streamlit-based chatbot application allows users to upload PDF files, extract text from them, and ask questions based on the content of the PDFs. It provides detailed answers using Google Generative AI.
-
+ 
 ## 🚀 Features
 
 - **PDF Reading and Text Extraction:** Upload multiple PDF files and extract the combined text.
