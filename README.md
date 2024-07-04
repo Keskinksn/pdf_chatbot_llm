@@ -1,6 +1,5 @@
 # PDF Chatbot 
 
-# PDF Chatbot
 
 This project is a Streamlit-based chatbot application that allows users to upload PDF files, extract text from them, and ask questions based on the content of the PDFs. The chatbot utilizes Google Generative AI to provide detailed answers.
 
@@ -41,14 +40,7 @@ Upload your PDF files using the sidebar uploader.
 Click "Submit & Process" to extract and process the text.
 Ask questions based on the content of the uploaded PDFs.
 Clear chat history using the "Clear Chat History" button.
-Code Overview
-Functions
-get_pdf_text(pdf_docs): Reads all PDF files and returns the extracted text.
-get_text_chunks(text): Splits the extracted text into chunks.
-get_vector_store(chunks): Creates and saves a FAISS vector store from text chunks.
-get_conversational_chain(): Sets up a conversational chain using Google Generative AI.
-clear_chat_history(): Clears the chat history in the Streamlit session state.
-user_input(user_question): Processes the user question, searches for similar documents, and returns the response from the conversational chain.
+
 Streamlit Interface
 Sidebar: For uploading PDF files and processing them.
 Main Area: For displaying chat messages and interacting with the chatbot
